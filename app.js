@@ -49,6 +49,7 @@ app.get('/', async (req, res) => {
             <h1>Failed retrieving download link.</h1>
             <p>Either:</p>
             <ul>
+                <li>You entered a wrong uuid.</li>
                 <li>You're trying to download a beta/preview build.</li>
                 <li>Can't connect to Microsoft servers.</li>
             </ul>
