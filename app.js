@@ -58,7 +58,7 @@ app.get('/', async (req, res) => {
 
     res.send(`
         <meta http-equiv="Refresh" content="1; url='${dlUrl[0]}'" />
-        If the download doesn't start, <a href="${dlUrl[0]}">Click here</a>
+        If the download doesn't start, <a href="${dlUrl[0]}">"Right-click" here and "Save link as..."</a>
     `);
 
 });
