@@ -1,0 +1,50 @@
+<html>
+  <head>
+    <title>mc-uwp-dl</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+        *,*::after,*::before {
+            box-sizing: border-box;
+        }
+
+        html {
+            height: calc(100vh - calc(100vh - 100%));
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        main {
+            display: grid;
+            place-items: center;
+            text-align: center;
+            height: calc(100% - 1em);
+        }
+        
+        footer {
+            height: 1em;
+        }
+
+        input {
+            font-size: 1.25rem;
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+        <form action="/">
+            <h1 class="titleHead">MC-UWP-DL</h1>
+            <input type="text" name="id" placeholder="UUID" maxlength="36">
+            <input type="submit" value="Download" placeholder="hint">
+        </form>
+    </main>
+    <footer>
+        <a href="https://github.com/StruckX/mc-uwp-dl" target="_blank">Source Code</a> | 
+        <a href="https://github.com/MCMrARM/mc-w10-versiondb/blob/master/versions.txt" target="_blank">Find UUIDs</a> | 
+        Original code by <a href="https://gist.github.com/MCMrARM/d4fe4a8f38e8a12034c1c830b19989c2">MCMrARM</a>
+    </footer>
+  </body>
+</html>
