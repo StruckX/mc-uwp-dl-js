@@ -7,25 +7,20 @@
             box-sizing: border-box;
         }
 
-        html {
+        body {
+            display: flex;
+            flex-direction: column;
             height: calc(100vh - calc(100vh - 100%));
+            font-family: Arial, Helvetica, sans-serif;
             margin: 0;
             padding: 0;
-        }
-        
-        body {
-            font-family: Arial, Helvetica, sans-serif;
         }
         
         main {
             display: grid;
             place-items: center;
             text-align: center;
-            height: calc(100% - 1em);
-        }
-        
-        footer {
-            height: 1em;
+            flex-grow: 1;
         }
 
         input {
@@ -36,7 +31,7 @@
   <body>
     <main>
         <form action="/">
-            <h1 class="titleHead">MC-UWP-DL</h1>
+            <h1>MC-UWP-DL</h1>
             <input type="text" name="id" placeholder="UUID" maxlength="36">
             <input type="submit" value="Download" placeholder="hint">
         </form>
